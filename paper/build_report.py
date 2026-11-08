@@ -20,7 +20,9 @@ def main():
     if not args.compiler:raise SystemExit('Tectonic is required: install it or set --compiler to its executable path. The .tex source and hackathon-layout companion were generated.')
     subprocess.run([args.compiler,'--untrusted','--keep-logs',str(ROOT/'paper/research_report.tex')],cwd=ROOT,check=True)
     from pypdf import PdfReader
-    pdf=ROOT/'paper/research_report.pdf'; reader=PdfReader(pdf)
+    pdf=ROOT/'paper/Beyond_the_Words_NeurIPS_Manuscript.pdf'
+    (ROOT/'paper/research_report.pdf').replace(pdf)
+    reader=PdfReader(pdf)
     texts=[p.extract_text() for p in reader.pages]
     ref=next(i+1 for i,t in enumerate(texts) if t.lstrip().startswith('References'))
     if ref-1>8:raise ValueError('Revised manuscript exceeds eight main pages')

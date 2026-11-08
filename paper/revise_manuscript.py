@@ -184,7 +184,7 @@ def main():
         if item['kind']=='equation' and '\\mathcal' in item['text']:
             item={**item,'text':'Law(Q,Y | semantic) = Law(Q,Y | placebo); TPR(tau) = FPR(tau).'}
         companion.append(item)
-    companion_metadata=original.render_pdf(companion,ROOT/'paper/research_report_hackathon.pdf')
+    companion_metadata=original.render_pdf(companion,ROOT/'paper/Beyond_the_Words_Swarm_Alignment_Submission.pdf')
     if companion_metadata['main_pages']>8:raise ValueError('Hackathon companion exceeds eight main pages')
     (ROOT/'paper/research_report_hackathon.metadata.json').write_text(json.dumps(companion_metadata,indent=2)+'\n')
     facts.update({'abstract_words':words,'title':TITLE,'authors':AUTHORS,'revision':'post-hoc identifiability extension','query_equivalence':cert,'official_style_url':'https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip','official_style_sha256':hashlib.sha256((ROOT/'paper/neurips_2026.sty').read_bytes()).hexdigest()})

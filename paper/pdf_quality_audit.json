@@ -3,11 +3,11 @@
   "revision": "post-hoc identifiability extension",
   "audited_at_utc": "2026-11-08T23:41:54.309528+00:00",
   "files": {
-    "research_report.pdf": {
+    "Beyond_the_Words_NeurIPS_Manuscript.pdf": {
       "sha256": "1d912ebbd58373f257bdd4ea0ec41011a18e0371e67ccc69f0bea27d4897de5d",
       "bytes": 233378
     },
-    "research_report_hackathon.pdf": {
+    "Beyond_the_Words_Swarm_Alignment_Submission.pdf": {
       "sha256": "a47877ebe303600b36e6d1f9a6b5ba6b84683aa98cd4a0a19d84ffd3c0082e68",
       "bytes": 353435
     }

@@ -18,7 +18,7 @@ was used for this revision. Its first build downloads standard TeX dependencies;
 subsequent cached builds can run without those downloads. The official `.sty`
 and generated `.tex` source are included. No modifications were made to `.sty`.
 
-The same command also generates `research_report_hackathon.pdf`, preserving the
+The same command also generates `Beyond_the_Words_Swarm_Alignment_Submission.pdf`, preserving the
 original event layout: US Letter, one-inch margins, Arial 11-point body, 1.15
 leading, and 16-point headings. It contains the same prose and equivalent
 mathematical statements. This companion meets the event's eight-main-page limit;
