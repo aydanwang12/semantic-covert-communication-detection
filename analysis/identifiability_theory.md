@@ -157,6 +157,12 @@ experiment must record actual choices, failures, and both target assignments
 rather than replacing them with the ideal values. The originally saved full
 factorial data permit a posthoc matched-target analysis, but that is a distinct,
 privileged information regime and must not be described as target-blind detection.
+The ideal causal **frame-change** comparison above is distinct from the saved
+receiver-action contrast A(H=1)-A(H=0). For complete balanced binary pairs, the
+mean of that action contrast equals twice original-message decoding accuracy
+minus one: A(1)-A(0) = 1[A(1)=1] + 1[A(0)=0] - 1. Reanalyzing that statistic does
+not supply independent evidence beyond the existing accuracy observations and
+must not be presented as a new intervention experiment.
 
 ## Scope of the contribution
 
