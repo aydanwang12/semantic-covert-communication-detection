@@ -1,0 +1,7 @@
+# Versions present in the experiment's Python 3.12.14 environment.
+# Core experiment, numerical analysis, and unittest checks use only stdlib.
+matplotlib==3.11.2
+numpy==2.3.5
+pytest==9.2.0
+reportlab==4.4.9
+pypdf==6.10.0
