@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "method": "fresh temporary source/data copy; system Python3; analysis --skip-figures; no project venv or bytecode caches",
+  "inputs": [
+    "data/pilot.jsonl",
+    "data/results.jsonl"
+  ],
+  "equality_scope": "entire final results_summary.json, excluding generated_at_utc",
+  "n_episodes": 192,
+  "no_model_calls": true
+}
