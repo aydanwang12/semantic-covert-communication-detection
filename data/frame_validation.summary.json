@@ -1,0 +1,222 @@
+{
+  "sentence_count": 32,
+  "valid_responses": 32,
+  "correct_labels": 32,
+  "invalid_responses": 0,
+  "label_accuracy_all_attempts": 1.0,
+  "intervention_sets": 16,
+  "lexical_preservation_successes": 16,
+  "semantic_change_successes": 16,
+  "all_labels_correct_sets": 16,
+  "intervention_validation": [
+    {
+      "template_index": 0,
+      "frame": 0,
+      "initial": 0,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 0,
+      "frame": 0,
+      "initial": 1,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 0,
+      "frame": 1,
+      "initial": 0,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 0,
+      "frame": 1,
+      "initial": 1,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 1,
+      "frame": 0,
+      "initial": 0,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 1,
+      "frame": 0,
+      "initial": 1,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 1,
+      "frame": 1,
+      "initial": 0,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 1,
+      "frame": 1,
+      "initial": 1,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 2,
+      "frame": 0,
+      "initial": 0,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 2,
+      "frame": 0,
+      "initial": 1,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 2,
+      "frame": 1,
+      "initial": 0,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 2,
+      "frame": 1,
+      "initial": 1,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 3,
+      "frame": 0,
+      "initial": 0,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 3,
+      "frame": 0,
+      "initial": 1,
+      "labels": {
+        "original": 0,
+        "lexical": 0,
+        "semantic_counterfactual": 1
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 3,
+      "frame": 1,
+      "initial": 0,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    },
+    {
+      "template_index": 3,
+      "frame": 1,
+      "initial": 1,
+      "labels": {
+        "original": 1,
+        "lexical": 1,
+        "semantic_counterfactual": 0
+      },
+      "lexical_preserves_frame": true,
+      "semantic_changes_frame": true,
+      "all_labels_correct": true
+    }
+  ],
+  "limitation": "Single codebook-blind rating per sentence using the experimental model itself; this is not independent human validation."
+}
