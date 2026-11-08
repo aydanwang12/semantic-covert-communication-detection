@@ -106,7 +106,8 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / "data/results.jsonl")
     parser.add_argument("--replicates", type=int)
     parser.add_argument("--workers", type=int)
-    parser.add_argument("--limit-blocks", type=int, help="Use a preselected balanced subset: 8 or 16 blocks per replicate")
+    parser.add_argument("--limit-blocks", type=int, choices=(16,),
+                        help="Retain the full 16-block crossing per replicate; omit for the same design")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--plan-only", action="store_true", help="Save planned episodes; make zero model calls")
     args = parser.parse_args()
@@ -115,12 +116,9 @@ def main():
     workers = args.workers or config.get("max_workers", 8)
     seed = config["seed"] + {"pilot": 0, "main": 1, "validation": 2}[args.split]
     episodes = generate_episodes(args.split, replicates, seed, config["conditions"])
-    if args.limit_blocks:
-        if args.limit_blocks not in (8, 16):
-            parser.error("limit-blocks must be 8 or 16")
-        # Optional balanced half-fraction fixed without observing responses.
-        if args.limit_blocks == 8:
-            episodes = [e for e in episodes if e["nuisance_initial"] == (e["hidden_bit"] ^ e["key_orientation"] ^ e["nuisance_frame"])]
+    # Never restrict to the former eight-block parity fraction: it creates
+    # target leakage through the joint (key, frame, initial) tuple in the placebo.
+    # The published pilot/main runs used the full crossing (limit_blocks=None).
     output = args.output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
     ledger = output.with_suffix(".calls.jsonl")
