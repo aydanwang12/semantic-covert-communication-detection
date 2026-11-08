@@ -1,0 +1,155 @@
+{
+  "verified_on": "2026-11-08",
+  "review_scope": "Focused primary-source review; not exhaustive",
+  "sources": [
+    {
+      "key": "denamganai2026popli",
+      "title": "Detecting Covert Collusion between AI Agents through Partner-Outsider Positive Listening",
+      "authors": [
+        "Kevin Yandoka Denamganaï"
+      ],
+      "year": 2026,
+      "version": "arXiv:2610.37849v1",
+      "submitted": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37849v1",
+      "full_text_url": "https://arxiv.org/html/2610.37849v1",
+      "verification": "Primary metadata and HTML inspected",
+      "relevant_sections": [
+        "Definitions 2-4",
+        "Proposition 5",
+        "Sections 3.2-3.3",
+        "Sections 5.1-5.2"
+      ],
+      "overlap": "Direct source for partner-outsider paraphrase response gap; explicitly excludes semantic channels"
+    },
+    {
+      "key": "zhou2026conceptual",
+      "title": "Conceptual Steganography",
+      "authors": [
+        "Zhejian Zhou",
+        "Jonathan May"
+      ],
+      "year": 2026,
+      "version": "arXiv:2605.26537v1",
+      "submitted": "2026-05-26",
+      "url": "https://arxiv.org/abs/2605.26537v1",
+      "full_text_url": "https://arxiv.org/html/2605.26537v1",
+      "verification": "Primary metadata and HTML inspected",
+      "relevant_sections": [
+        "Concept channel",
+        "Keyword baseline",
+        "Decoder",
+        "Standard paraphrase"
+      ],
+      "overlap": "Already demonstrates conceptual-vs-keyword robustness under paraphrasing"
+    },
+    {
+      "key": "anwar2026decision",
+      "title": "A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring",
+      "authors": [
+        "Usman Anwar",
+        "Julianna Piskorz",
+        "David D. Baek",
+        "David Africa",
+        "Jim Weatherall",
+        "Max Tegmark",
+        "Christian Schroeder de Witt",
+        "Mihaela van der Schaar",
+        "David Krueger"
+      ],
+      "year": 2026,
+      "version": "arXiv:2602.23163v3",
+      "submitted": "2026-02-26",
+      "revised": "2026-04-29",
+      "url": "https://arxiv.org/abs/2602.23163v3",
+      "full_text_url": "https://arxiv.org/html/2602.23163v3",
+      "verification": "Primary metadata and v1/v3 HTML inspected; v3 chosen",
+      "relevant_sections": [
+        "Sections 3-4",
+        "Appendix A.2-A.5",
+        "Tables 7-8"
+      ],
+      "overlap": "Substantial: six structural/syntactic/semantic channels and receiver-sentinel accuracy gaps under two paraphrasers already tested"
+    },
+    {
+      "key": "motwani2024secret",
+      "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+      "authors": [
+        "Sumeet Ramesh Motwani",
+        "Mikhail Baranchuk",
+        "Martin Strohmeier",
+        "Vijay Bolina",
+        "Philip H. S. Torr",
+        "Lewis Hammond",
+        "Christian Schroeder de Witt"
+      ],
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37, Main Conference Track",
+      "doi": "10.52202/079017-2336",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/861f7dad098aec1c3560fb7add468d41-Abstract-Conference.html",
+      "full_text_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/861f7dad098aec1c3560fb7add468d41-Paper-Conference.pdf",
+      "verification": "Primary proceedings abstract/metadata and paper first page inspected",
+      "overlap": "Establishes secret-collusion threat model and empirical steganographic capabilities"
+    },
+    {
+      "key": "rose2026narcbench",
+      "title": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
+      "authors": [
+        "Aaron Rose",
+        "Carissa Cullen",
+        "Sahar Abdelnabi",
+        "Philip Torr",
+        "Brandon Gary Kaplowitz",
+        "Christian Schroeder de Witt"
+      ],
+      "year": 2026,
+      "version": "arXiv:2604.01151v5",
+      "submitted": "2026-04-01",
+      "revised": "2026-10-15",
+      "url": "https://arxiv.org/abs/2604.01151v5",
+      "full_text_url": "https://arxiv.org/html/2604.01151v5",
+      "code_url": "https://github.com/aaronrose227/narcbench",
+      "verification": "Latest primary metadata and HTML inspected; author repo inspected",
+      "relevant_sections": [
+        "Abstract",
+        "Sections 5-6",
+        "Appendix L"
+      ],
+      "overlap": "Complementary activation-based detection, including steganographic blackjack; not same replay statistic"
+    },
+    {
+      "key": "krzyzanowski2026hand",
+      "title": "Hand and Brain: Defenses against Agentic Steganography in Language Models",
+      "authors": [
+        "Robert Krzyzanowski",
+        "Iván Arcuschin",
+        "Matthew Lee",
+        "Bryce Meyer",
+        "Georg Lange"
+      ],
+      "year": 2026,
+      "venue": "OpenReview manuscript; conference/workshop status not independently resolved",
+      "url": "https://openreview.net/forum?id=P7fHU7ZNFQ",
+      "full_text_url": "https://openreview.net/attachment?id=P7fHU7ZNFQ&name=pdf",
+      "verification": "Original PDF text available in primary-domain search result; direct fetch blocked by OpenReview browser verification",
+      "relevant_sections": [
+        "Abstract",
+        "Introduction",
+        "Codebook appendix"
+      ],
+      "overlap": "High-level choices carry covert payloads that lexical paraphrase can preserve; trusted-prefix defense studied"
+    }
+  ],
+  "official_rules": {
+    "url": "https://apartresearch.com/sprints/swarm-alignment-2026",
+    "template_url": "https://docs.google.com/document/d/1_1_27EyZriMlc8n8EBE2YScaeyMjm-8xjR097nmHXAE/copy?usp=sharing",
+    "main_page_limit": 8,
+    "abstract_words": [
+      150,
+      250
+    ],
+    "required_appendix": "Limitations and Dual-Use / Ethical Considerations",
+    "deadline": "2026-11-08T23:59:00-12:00",
+    "template_note": "Parent orchestrator retrieved template via connected Drive; literature agent direct web fetch required login"
+  }
+}
