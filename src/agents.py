@@ -1,7 +1,8 @@
 """Isolated LLM calls through the authenticated Codex CLI or OpenAI API.
 
 Never cache or synthesize experimental responses. Each call gets a fresh context.
-No credentials are read by this code or written into experimental records.
+No credentials are written into experimental records.
+The optional API backend reads its key only from the environment.
 """
 from __future__ import annotations
 import json
