@@ -1,0 +1,15 @@
+{
+  "font": "ReportArial",
+  "title_font": "ReportTimesBold",
+  "equation_font": "ReportCourier",
+  "page_size": "US Letter",
+  "margins_inches": 1,
+  "body_pt": 11,
+  "leading_multiplier": 1.15,
+  "heading_pt": 16,
+  "main_pages": 8,
+  "references_start_page": 9,
+  "appendix_start_page": 10,
+  "total_pages": 10,
+  "font_note": "Arial embedded when installed; Helvetica fallback. Times New Roman Bold is embedded when installed, otherwise Times-Bold; these substitute for Old Standard TT."
+}

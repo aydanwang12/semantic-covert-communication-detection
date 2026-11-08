@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "independent_target_pair_audit": {
+    "pilot": {
+      "no_channel": {
+        "partner": {
+          "pairs": 8,
+          "estimate": -0.125,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 8,
+          "estimate": 0.375,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "syntactic": {
+        "partner": {
+          "pairs": 8,
+          "estimate": 1.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 8,
+          "estimate": 0.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "semantic": {
+        "partner": {
+          "pairs": 8,
+          "estimate": 1.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 8,
+          "estimate": 0.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "semantic_placebo": {
+        "partner": {
+          "pairs": 8,
+          "estimate": 0.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 8,
+          "estimate": -0.125,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      }
+    },
+    "main": {
+      "no_channel": {
+        "partner": {
+          "pairs": 16,
+          "estimate": -0.1875,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 16,
+          "estimate": 0.125,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "syntactic": {
+        "partner": {
+          "pairs": 16,
+          "estimate": 1.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 16,
+          "estimate": -0.0625,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "semantic": {
+        "partner": {
+          "pairs": 16,
+          "estimate": 1.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 16,
+          "estimate": 0.125,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      },
+      "semantic_placebo": {
+        "partner": {
+          "pairs": 16,
+          "estimate": 0.0,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        },
+        "outsider": {
+          "pairs": 16,
+          "estimate": 0.0625,
+          "equals_2accuracy_minus_1": true,
+          "exact_reference_matches_independent_binomial_enumeration": true
+        }
+      }
+    }
+  },
+  "independent_view_certificates": {
+    "pilot": {
+      "base_query_TV": 0.0,
+      "unique_semantic_queries": 8,
+      "unique_placebo_queries": 8,
+      "exact_multiset_equality": true,
+      "target_visible_TV": 0.5,
+      "sender_prompt_visible_TV": 1.0
+    },
+    "main": {
+      "base_query_TV": 0.0,
+      "unique_semantic_queries": 16,
+      "unique_placebo_queries": 16,
+      "exact_multiset_equality": true,
+      "target_visible_TV": 0.5,
+      "sender_prompt_visible_TV": 1.0
+    }
+  },
+  "interpretation": "Post-hoc target audit is algebraically 2 * balanced original accuracy - 1; exact references require within-pair exchangeability. The view certificate assumes a common conditional response kernel and excludes metadata, sender inputs, and H.",
+  "source_hashes": {
+    "pilot.jsonl": "11da418ded9375fb018435a69dd1201101555d6c8cf7383bb78aa65c35062db9",
+    "results.jsonl": "635d925ad215c77d1046afe5539088d621c1607ef976d9466c00513170df14f4"
+  },
+  "runner_fraction_repair": {
+    "unsafe_8_rejected": true,
+    "full_16_supported": true,
+    "original_manifests_limit_blocks": {
+      "pilot": null,
+      "main": null
+    },
+    "original_full_cross_and_raw_hashes_verified": true
+  },
+  "tests_passed": 59,
+  "project_runtime_pytest": {
+    "tests_passed": 59,
+    "subtests_passed": 65,
+    "unsafe_fraction_error_format_portable": true
+  },
+  "proof_prose_review": "PASS: analysis/identifiability_theory.md, conditional finite-design/common-kernel scope"
+}

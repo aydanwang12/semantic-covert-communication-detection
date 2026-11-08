@@ -1,0 +1,35 @@
+{
+  "abstract_words": 199,
+  "main_episodes": 128,
+  "pilot_episodes": 64,
+  "main_blocks": 32,
+  "unique_main_original_messages": 8,
+  "main_template_pairs": 2,
+  "main_model_calls": 1152,
+  "pilot_model_calls": 576,
+  "validation_model_calls": 32,
+  "total_model_calls": 1760,
+  "invalid_experiment_calls": 0,
+  "observed_experiment_tool_calls": 0,
+  "valid_wrong_positive_sender_choices": 0,
+  "semantic_diagnostic_failed_vs_controls": true,
+  "source_summary_sha256": "a8a3843319c0c6e50a992322a5fd89755165819d3192a75babc6378340f7feeb",
+  "audit_status": "PASS",
+  "title": "Beyond the Words: An Identifiability Limit for Covert-Communication Monitors",
+  "authors": "Aydan Wang, Sophie Eisenberg, and James Horangic",
+  "revision": "post-hoc identifiability extension",
+  "query_equivalence": {
+    "pilot": {
+      "equal": true,
+      "episodes_per_condition": 16,
+      "unique_query_bundles": 8
+    },
+    "main": {
+      "equal": true,
+      "episodes_per_condition": 32,
+      "unique_query_bundles": 16
+    }
+  },
+  "official_style_url": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip",
+  "official_style_sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a"
+}

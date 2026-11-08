@@ -1,33 +1,67 @@
 {
   "status": "PASS",
-  "audited_at_utc": "2026-11-08T23:22:30.602783+00:00",
-  "pdf_sha256": "0cef4060b5971743713db17e86ae51447ddf28dce095ac77495528af9974b104",
-  "pages_rendered": 9,
-  "pages_visually_inspected": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9
+  "revision": "post-hoc identifiability extension",
+  "audited_at_utc": "2026-11-08T23:41:54.309528+00:00",
+  "files": {
+    "research_report.pdf": {
+      "sha256": "1d912ebbd58373f257bdd4ea0ec41011a18e0371e67ccc69f0bea27d4897de5d",
+      "bytes": 233378
+    },
+    "research_report_hackathon.pdf": {
+      "sha256": "a47877ebe303600b36e6d1f9a6b5ba6b84683aa98cd4a0a19d84ffd3c0082e68",
+      "bytes": 353435
+    }
+  },
+  "primary": {
+    "renderer": "Tectonic0.17.0 with official unmodified neurips_2026.sty, preprint option",
+    "main_pages": 7,
+    "total_pages": 9,
+    "pages_visually_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "hackathon_companion": {
+    "renderer": "ReportLab, Arial11,1inch margins",
+    "main_pages": 8,
+    "total_pages": 10,
+    "pages_visually_inspected_by_orchestrator": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "abstract_words": 199,
+  "authors": [
+    "Aydan Wang",
+    "Sophie Eisenberg",
+    "James Horangic"
   ],
-  "main_pages": 7,
-  "references_start_page": 8,
-  "appendix_start_page": 9,
-  "abstract_words": 185,
-  "rendering": "Poppler pdftoppm at 110 dpi; local Fontconfig cache/config; zero final rendering warnings",
   "checks": [
-    "No clipped or overlapping text",
-    "All three figures readable at full text width",
-    "Tables fit one-inch margins",
-    "Correct authors and affiliation",
-    "Required ethics appendix and LLM usage statement present",
-    "Seven main pages below eight-page limit",
-    "Numbers generated from audited summary/raw data with matching SHA-256"
+    "No continuation headings",
+    "All three authors and common affiliation correct",
+    "Main-page limits satisfied",
+    "Formal proposition and proof present",
+    "Post-hoc status explicit",
+    "Population equality distinguished from finite observations",
+    "Target-visible TV0.5/optimalbalancedaccuracy0.75 scope explicit",
+    "All59 extendedtests passed as confirmed by testing/orchestrator",
+    "No clipped or overlapping material in rendered pages"
   ],
-  "preview_directory": "tmp/pdfs/",
-  "notes": "Final content corrections and embedded serif/monospace fonts were rebuilt and their changed pages re-inspected; unchanged page layout had already been inspected. Previews are temporary and ignored by Git."
+  "preview_directory": "tmp/pdfs/revision/",
+  "notes": "Underfull TeX box warnings visually reviewed; no overfull boxes. Original sprint archive remains unchanged."
 }
