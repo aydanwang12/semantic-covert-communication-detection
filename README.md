@@ -47,7 +47,7 @@ collusion. See the [literature review](references/literature_review.md),
 [prespecified analysis plan](config/analysis_plan.md).
 
 Research sprint started November 8, 2026 at 22:45:38 UTC. Main collection finished
-at 23:18:31 UTC. Read the [research report (PDF)](paper/research_report.pdf),
+at 23:18:31 UTC. Read the [research report (PDF)](paper/Beyond_the_Words_NeurIPS_Manuscript.pdf),
 [report source](paper/research_report.md), [independent data audit](paper/data_audit.json),
 and [clean-source reproduction audit](paper/reproduction_audit.json).
 
@@ -191,10 +191,10 @@ It does not independently implement the bootstrap interval calculation.
 
 ## Rebuild the research PDFs
 
-The primary [NeurIPS-style manuscript](paper/research_report.pdf) uses the
+The primary [NeurIPS-style manuscript](paper/Beyond_the_Words_NeurIPS_Manuscript.pdf) uses the
 unmodified official 2026 LaTeX style in **preprint** mode; it does not imply
 conference submission or acceptance. The companion
-[hackathon-layout report](paper/research_report_hackathon.pdf) follows the event
+[hackathon-layout report](paper/Beyond_the_Words_Swarm_Alignment_Submission.pdf) follows the event
 layout with the same content. Neither has repeated "continued" headings.
 The initial report and generator are preserved under `paper/archive/`.
 
