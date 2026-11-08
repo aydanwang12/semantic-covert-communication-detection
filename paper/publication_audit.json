@@ -1,0 +1,467 @@
+{
+  "remote_commit": "79ea6f477042bc355cc45758d7d1fb029cfbfba6",
+  "checked_files": 88,
+  "mismatches": [],
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "7eec243ad0dd26c2a6464b1a0861be32d92cfcc0951cde06ee72783c518a79ee",
+      "remote_matches": true
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6ac9666966ad2a2403547110fc61c509ca87add0c2978ef7dbe41e6f60d12112",
+      "remote_matches": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "5dedfa67de868a67fa538ed6034af3962e4ffcc3d3978ea0f3619c2daea91411",
+      "remote_matches": true
+    },
+    {
+      "path": "Makefile",
+      "sha256": "1c60ea0404be254bf1ea6f0704322f446ca61d8279783e9b25fc7014a8f84c94",
+      "remote_matches": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "4e6eca297c61d8930f1649a72f758a8327f116bd922d73eed0477a1a0d521242",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/README.md",
+      "sha256": "401e102b49911f614adf677acb51257ee3365459c76ca3b4c0ceb05d4fc8a935",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/analyze.py",
+      "sha256": "64979907b49dc1042231c57ac11bf8598483f214cad63345d11519a0e96d9c70",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/episode_metrics.csv",
+      "sha256": "21c9bc6a48b052ce66e9ffd22cd06e4fcaeecb0a51e77276e78af049a88a365e",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_behavioral_gap.pdf",
+      "sha256": "0c81f445cd46e622993aad7ed73ac32b474a58aaa81a8ba546b28f41db9b51e6",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_behavioral_gap.png",
+      "sha256": "c95588af021ccb020f9ade91b96683eaa56ad2f950789a9af60173d509a662df",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_behavioral_gap.svg",
+      "sha256": "a8fbc9ad1a5c4ecf9fc902a912ad8215ae6dc0a6e6aae6b79d971c5c2e1412af",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_decoding_accuracy.pdf",
+      "sha256": "a9489c19d5f364eae882292ec1ffa6ba0fbe275764c417238f47f1a7403db5a9",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_decoding_accuracy.png",
+      "sha256": "c7509376050c0642bca033e7308d7241f3bf6a737086c0d3a921db16bd5692b8",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_decoding_accuracy.svg",
+      "sha256": "78c2289656bfd9170a4ef11c3c4e9a591c2c1732fe833d3c38797f1cd031f4d9",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_detection_rates.pdf",
+      "sha256": "cc8cf76fbeeae037dcdc3144e1c95b250ecb8fde7fa0a91698627340cbaf06f5",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_detection_rates.png",
+      "sha256": "1bc7248a741b8f608420fee71c574f4afddb4504fb98aa25ea40a2fca5938503",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/main_detection_rates.svg",
+      "sha256": "7839c853a71f4744438c785c7398850ecd9da2dc5fcea658a46cc51d1513b122",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_behavioral_gap.pdf",
+      "sha256": "9d5fa320f74d788ee0bab969b1bfef3a402484a16c094ba812a69c63dc2bd286",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_behavioral_gap.png",
+      "sha256": "3157512adb48b7a6102315e191fb1b8cd3ae3e8c97cb2408ed462b7ae36ad71b",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_behavioral_gap.svg",
+      "sha256": "317f39dcd35413edb71827c04e8524430bfb36b206d923f7b80e3c02a3876b76",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_decoding_accuracy.pdf",
+      "sha256": "902be443c7ae0f1f155746d128b1ad7c2f5023080a5f9c2f016ae9d54177f1f7",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_decoding_accuracy.png",
+      "sha256": "5a09cb7b7dd5d68e51109c93e5fc2ad8762a545fb3c2e9e73b8e5b1f460064a1",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_decoding_accuracy.svg",
+      "sha256": "5fa7a9a81b600d9aebd197cbfbe8ecff0ab91744383b45627ad8954e2d7f861d",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_detection_rates.pdf",
+      "sha256": "4d31832c9b4516433d663df5c3788dc5d753e85232ca184286b695d14865ea1d",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_detection_rates.png",
+      "sha256": "8e2a7e52da6aa7be7c6a781152327163cc4a4158f0bf33788ca37e96d879243f",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/figures/pilot_detection_rates.svg",
+      "sha256": "e8fe2e16f0e1195292b5500b2ed856a5d40e988efcac85c38c0d20800b4bd0c5",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/episode_metrics.csv",
+      "sha256": "55dd49d8a637dcb3204bf97e0a51374ffc99a5be2ce4a7286590927911b9c863",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_behavioral_gap.pdf",
+      "sha256": "98973b27624d36490e334ceaa23124769b5d8c9ee32c0a21b49a5c4ae48a02a7",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_behavioral_gap.png",
+      "sha256": "3157512adb48b7a6102315e191fb1b8cd3ae3e8c97cb2408ed462b7ae36ad71b",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_behavioral_gap.svg",
+      "sha256": "518c2cace4c928fdee166ffafe15da38168004a6f898c52b473655e3fa410ef3",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_decoding_accuracy.pdf",
+      "sha256": "bd81f3c0d17a56a37b96d6c67e5c3e13b1a59b60630b94b37b0d9820e3777450",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_decoding_accuracy.png",
+      "sha256": "5a09cb7b7dd5d68e51109c93e5fc2ad8762a545fb3c2e9e73b8e5b1f460064a1",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_decoding_accuracy.svg",
+      "sha256": "8a4ef0d420e630c1c0b1b31f88fa99d32f15a91910669ce0d7292068be573304",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_detection_rates.pdf",
+      "sha256": "e814d94a9ee1faf63850d512317906eedd5d37e187996265f3f0dcb187f7d2f1",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_detection_rates.png",
+      "sha256": "8e2a7e52da6aa7be7c6a781152327163cc4a4158f0bf33788ca37e96d879243f",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/figures/pilot_detection_rates.svg",
+      "sha256": "b49de974c38bf3b5678760cb61da7981df032d7f9e509be337984068462ca6b0",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/results_summary.json",
+      "sha256": "2f2230ceeb20a78a9e68d12c77e3e5d65bd778ec8135c2665ed0859b85043108",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/pilot/results_summary.md",
+      "sha256": "d81ecf04b2f919cd05cb9edb11ae1c1bc8437cba84235758358fdbc49f3ff5a8",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/results_summary.json",
+      "sha256": "a8a3843319c0c6e50a992322a5fd89755165819d3192a75babc6378340f7feeb",
+      "remote_matches": true
+    },
+    {
+      "path": "analysis/results_summary.md",
+      "sha256": "6a45f9b29be89266f3d444a20d0d46fdb9463abfe93f113d8457013c3fddf713",
+      "remote_matches": true
+    },
+    {
+      "path": "config/analysis_plan.md",
+      "sha256": "80fe8c0a43549bfb9f2c16dd6d838feae31360cf190f448a312c497b52309049",
+      "remote_matches": true
+    },
+    {
+      "path": "config/experiment.json",
+      "sha256": "6c1d97ff945c7e800cb6d476c0287196f4a080db0fd6f0920c753acb1dd4bd29",
+      "remote_matches": true
+    },
+    {
+      "path": "config/model_instructions.txt",
+      "sha256": "035022633dd488e9c172188d75ac9f697b28f6e6757efb0ec8810b88ed719ab9",
+      "remote_matches": true
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "39901b8b152892e5cd046f4dc5c2f9fc7cef7e805b3df76a633705e30ebb856c",
+      "remote_matches": true
+    },
+    {
+      "path": "data/frame_validation.jsonl",
+      "sha256": "5083b89d13bc77804e9439bb1a05e145c6f8c4011ca9ba48824cc660a3636be3",
+      "remote_matches": true
+    },
+    {
+      "path": "data/frame_validation.manifest.json",
+      "sha256": "637dccae3dd04a6f43ee50bed262391aa762579791a5d64e30f3f8ad24e23eee",
+      "remote_matches": true
+    },
+    {
+      "path": "data/frame_validation.summary.json",
+      "sha256": "3c344e074988ae5df8eb8e7b49340cadc1902cca8c62a620c59b5669b4fc6bd0",
+      "remote_matches": true
+    },
+    {
+      "path": "data/pilot.calls.jsonl",
+      "sha256": "ee6cc83e3440f0ab82fc2b725f37243a7d13ec3a465b1ca667ab75b1eb4e9c0f",
+      "remote_matches": true
+    },
+    {
+      "path": "data/pilot.jsonl",
+      "sha256": "11da418ded9375fb018435a69dd1201101555d6c8cf7383bb78aa65c35062db9",
+      "remote_matches": true
+    },
+    {
+      "path": "data/pilot.manifest.json",
+      "sha256": "dd240614e522b7b539dcbf602177575ebda42bde40a2f20b13e690dfcd9262e2",
+      "remote_matches": true
+    },
+    {
+      "path": "data/prompt_provenance.md",
+      "sha256": "0adee98f6093bb1310a68a43d7ff31be3962bf49e08e1c97c326ae0872c5e960",
+      "remote_matches": true
+    },
+    {
+      "path": "data/results.calls.jsonl",
+      "sha256": "5b7635f58ba972949aae48b3ea9414f2663af77afb5b9f517b02bf19db7abd2a",
+      "remote_matches": true
+    },
+    {
+      "path": "data/results.jsonl",
+      "sha256": "635d925ad215c77d1046afe5539088d621c1607ef976d9466c00513170df14f4",
+      "remote_matches": true
+    },
+    {
+      "path": "data/results.manifest.json",
+      "sha256": "441cb25e7b78fccef2595c4629c469292c2cc60ef7f494acbf6f5d3996cc8b64",
+      "remote_matches": true
+    },
+    {
+      "path": "data/submitted_prompts.derived.jsonl",
+      "sha256": "0f963dceb4bb9e56f1c99b18aa5810d36ece6430fbf67d7056c5210908c5b2be",
+      "remote_matches": true
+    },
+    {
+      "path": "experiments/export_submitted_prompts.py",
+      "sha256": "b38a90f30196c24b1be634c5d5d89ad591c629e937c8d5eac5bcc2cc0aeb747b",
+      "remote_matches": true
+    },
+    {
+      "path": "experiments/run_experiment.py",
+      "sha256": "6bc0b271d8635819a2aa4a384eb83f72c24c2f4e4017a3282f1892394564c517",
+      "remote_matches": true
+    },
+    {
+      "path": "experiments/validate_frames.py",
+      "sha256": "3cb8b3ec06b716f7c83f915e53879a67c5b6813211b57ca9571e4dc5672042aa",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/build_report.py",
+      "sha256": "755fd0641e554b89d448829015d9cf47eb3da2148c3f6aea9142e165c68816a7",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/data_audit.json",
+      "sha256": "7f9d6de5a17d6cf982f4dcb225c75668ec5ded89d04fc9f83559269b373ef504",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/independent_interpretation.md",
+      "sha256": "ee3f2d2b4311d717e5f6200b8c471b4aa7290bc516b684da9da3851ba80e0ba7",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/pdf_quality_audit.json",
+      "sha256": "06cb4c6dc94f80496faedd8656aa16e3fb2cdf8e4c965fa36c37ff31bb1c45e4",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/pilot_data_audit.json",
+      "sha256": "ab8ad86bd0ea67d74afe8cdc1ba060ee4d2c41acaffea345853bf7dcc746e7a6",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/quality_audit.md",
+      "sha256": "5b24154ba015c97268ddfc16086569b6dda25479a0270e69760d2289a71acf3a",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/reproduction_audit.json",
+      "sha256": "f3ba76d843500273555e37eb2fb661dc2dcaac684500b667cced0f2385e32d3f",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/research_report.md",
+      "sha256": "249647f0b558c461a3c0e3f0bb4b86cde1e0253a46760d361c050233eb116574",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/research_report.metadata.json",
+      "sha256": "a67a98f075cbbe0f1a79a010d7dde85ea608ece736f58f47c55412d71cb3d419",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/research_report.pdf",
+      "sha256": "0cef4060b5971743713db17e86ae51447ddf28dce095ac77495528af9974b104",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/sprint_log.md",
+      "sha256": "40fb1ccceb19765c500a2bb579dff0720d4b95a14b0b5e396780c3329ff1e18b",
+      "remote_matches": true
+    },
+    {
+      "path": "paper/test_results.txt",
+      "sha256": "63ba824bf3a50fab4ed579aa49988e963802f9c84ba71a750c342e89d9480571",
+      "remote_matches": true
+    },
+    {
+      "path": "references/bibliography.bib",
+      "sha256": "0f113836d29276aa0b7a1810c374f49a6621f53dfbd81aaa1c44a49eac9ce302",
+      "remote_matches": true
+    },
+    {
+      "path": "references/literature_review.md",
+      "sha256": "8d20702853f3f20ba8197794d3d042e87df67d3d9e2c1a3f335627c0baba02c9",
+      "remote_matches": true
+    },
+    {
+      "path": "references/sources.json",
+      "sha256": "3f3906b9d149a382f64d1c053d00d2ffe1bd2002c93a76fca544f8b6011fc1c0",
+      "remote_matches": true
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "be0db319de59b7028ba85b66d08ae572d58ab5e041362f9c4641479604a32a31",
+      "remote_matches": true
+    },
+    {
+      "path": "src/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "remote_matches": true
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "0c85955f37cb95a984969431d2313bfc02d77a9aa71404faf86c04d5686bd9f5",
+      "remote_matches": true
+    },
+    {
+      "path": "src/agents.py",
+      "sha256": "3d5062825a8edc34995febf66058baded3c7c72c06953aef3ce8ac6e52c2a99e",
+      "remote_matches": true
+    },
+    {
+      "path": "src/channels.py",
+      "sha256": "25db57b25612e9964f0a06a0b1551592b35b4806a1d53666f3f38942c79154bb",
+      "remote_matches": true
+    },
+    {
+      "path": "src/detection.py",
+      "sha256": "b83f56b1829362564988198536d061ab22eb32b4eafb70127971cefbbc5a5cc6",
+      "remote_matches": true
+    },
+    {
+      "path": "src/environment.py",
+      "sha256": "facb9e91770d75f004ed43cafb3fa3c9b9ae80fec196bd3ed844bd18116e39a1",
+      "remote_matches": true
+    },
+    {
+      "path": "src/interventions.py",
+      "sha256": "b91c24b62debac9fa1d8d0e8f5a01ff2d4f70986f353810cfe53a4c71230dd55",
+      "remote_matches": true
+    },
+    {
+      "path": "src/metrics.py",
+      "sha256": "bcccf2524a797382e27b63689bcfd8572cb321ef6de4ebb3f87c63a4575b8019",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/independent_audit.py",
+      "sha256": "085e5c963f2d9306cf8316daf81f7a7ba57a7746cf1999f81e0285c5e1dbc12e",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/test_agents.py",
+      "sha256": "0d933c027111bdd41ba69792775315f6f7588bfc8b28d343cef46489662d1254",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/test_channels.py",
+      "sha256": "9c0bc7e7a40066e4772b5e1c388f2df6135245fb5ae8d61f5537b3eb38748567",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/test_environment.py",
+      "sha256": "136d837b4b7f5b08d826cf9e158d9b83fae2083d7cc664bd2ad1873afbb81ccc",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/test_interventions.py",
+      "sha256": "e04b2904255a40d35aec28f25c56c62a13262c34952ffede3979a599ce765526",
+      "remote_matches": true
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "60e44eaba0e6368264c1b2082ad117b09f95056b6a6c561b06015993a9042e9e",
+      "remote_matches": true
+    }
+  ],
+  "status": "PASS",
+  "verified_at_utc": "2026-11-08T23:25:43.973321+00:00",
+  "repository_url": "https://github.com/aydanwang12/semantic-covert-communication-detection",
+  "publication_method": "Authenticated GitHub browser uploads created remote Git commits; no credentials copied or access settings changed.",
+  "public_clone_tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "tests": 43,
+    "status": "PASS"
+  },
+  "public_clone_reanalysis": {
+    "command": "python3 analysis/analyze.py data/pilot.jsonl data/results.jsonl --skip-figures --output-dir /tmp/semantic-reproduction",
+    "comparison": "All numerical summary fields including bootstrap intervals identical; generated_at_utc excluded.",
+    "status": "PASS"
+  },
+  "public_clone_independent_audit": {
+    "comparisons": 84,
+    "status": "PASS"
+  },
+  "verification_scope": "88 core project files were byte-identical at the named remote commit. This publication audit is added afterward and is not included in its own file manifest.",
+  "privacy_scan": "No credential-like patterns or unsanitized known home-directory prefixes found in published text artifacts."
+}
