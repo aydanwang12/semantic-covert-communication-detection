@@ -8,3 +8,6 @@ __pycache__/
 .DS_Store
 tmp/
 *.log
+*.aux
+*.out
+paper/neurips_style/

@@ -1,9 +1,36 @@
 # Beyond the Words
 
-**Testing Behavioral Detection of Semantic Covert Communication Between AI Agents**
+**An Identifiability Limit for Covert-Communication Monitors**
 
-Aydan Wang and Sophie Eisenberg · FranklinDAO/Penn Blockchain  
+Aydan Wang, Sophie Eisenberg, and James Horangic · FranklinDAO/Penn Blockchain  
 Track 4: Multi-Agent Oversight and Control · Swarm Alignment Hackathon 2026
+
+**Revision:** the central finding is now an exact, auditable counterexample:
+receiver behavior can reveal use of a private convention without identifying
+whether it transmits the designated hidden target. The semantic channel and
+placebo have **identical receiver-query multisets** in both saved splits.
+Under a common receiver-response kernel, every detector restricted to that
+declared view therefore has equal population true- and false-positive rates;
+its balanced accuracy and population AUROC are 0.5. This is a concrete
+application of indistinguishability, not a new general impossibility theorem.
+
+The [machine-readable certificate](analysis/identifiability_results.json)
+checks the actual saved prompts, full crossing, sender choices, and hashes.
+The [proof and observation boundary](analysis/identifiability_theory.md)
+exclude the hidden target, sender-private prompts, condition/episode labels,
+timing, and runtime metadata. Identical experiment-owned inputs do not prove
+identical uncaptured provider context. The original result that one simplified
+score discriminates poorly should be interpreted in light of this limitation
+of the benchmark, rather than as evidence against behavioral monitoring generally.
+
+The target-visible audit pairs trials differing only in H. The main partner's
+mean A(H=1)-A(H=0) is 1.0 for semantic and 0.0 for placebo (16 pairs each).
+For balanced binary pairs this equals 2 × decoding accuracy − 1: it reorganizes
+the existing observations, not new independent evidence or a deployable
+target-blind detector. These additions are explicitly **post hoc**. No new
+model calls or altered original observations are presented as an additional study.
+
+![Convention use versus target transmission](analysis/figures/main_target_grounding.png)
 
 This controlled study compares an explicit syntactic convention with an explicit
 semantic convention using a codebook-informed partner, a codebook-uninformed
@@ -11,7 +38,8 @@ outsider, and targeted message interventions. A semantic-placebo control tests
 whether behavioral sensitivity identifies use of a convention even when the
 message carries no information about the experimental hidden instruction.
 
-The contribution is a controlled empirical comparison and a specificity check.
+The contribution is a controlled counterexample, a reproducible identifiability
+certificate, and a specificity check.
 It does not claim to invent semantic steganography, receiver-outsider comparisons,
 or behavioral monitoring. The finite, assigned conventions are not emergent
 collusion. See the [literature review](references/literature_review.md),
@@ -52,8 +80,8 @@ See the [intervention-gap figure](analysis/figures/main_behavioral_gap.png),
 [decoding figure](analysis/figures/main_decoding_accuracy.png), and
 [complete numerical summary](analysis/results_summary.json) for components,
 intervals, repeat diagnostics, pilot outcomes, and explicit denominators.
-The independent audit matched all 84 point-estimate comparisons. All 43 unit
-tests passed; clean-source reanalysis reproduced the full numerical summary,
+The independent audit matched all 84 point-estimate comparisons. The original 43 unit
+tests passed; the expanded revision suite passes 59 tests. Clean-source reanalysis reproduced the full numerical summary,
 including intervals. The main protocol and threshold were unchanged after the pilot.
 
 ## Experimental design
@@ -107,7 +135,9 @@ score is `max(D_lexical, D_semantic_counterfactual)`, with a fixed threshold abo
 zero. Original-message decoding accuracy measures agreement with the actual
 hidden instruction.
 
-This single-draw action-flip proxy is inspired by prior behavioral monitoring;
+The added exact certificate explains why target-blind receiver replay cannot
+separate semantic from placebo in this construction, regardless of this score.
+The original single-draw action-flip proxy is inspired by prior behavioral monitoring;
 it is not the full PoPLi distributional estimator. A placebo alarm is a false
 positive for **hidden-instruction transmission**, although it can correctly
 identify **use of a private convention**. See [analysis details](analysis/README.md)
@@ -129,6 +159,8 @@ python3 -m unittest discover -s tests -v
 python3 analysis/analyze.py data/pilot.jsonl data/results.jsonl --skip-figures
 python3 tests/independent_audit.py data/pilot.jsonl data/results.jsonl \
   --summary analysis/results_summary.json --output analysis/independent_audit.json
+python3 analysis/identifiability.py data/pilot.jsonl data/results.jsonl
+python3 analysis/target_conditioned_audit.py data/pilot.jsonl data/results.jsonl
 ```
 
 For a pilot-only analysis that leaves final outputs intact:
@@ -144,6 +176,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m pytest -q
 .venv/bin/python analysis/analyze.py data/pilot.jsonl data/results.jsonl
+.venv/bin/python analysis/plot_grounding.py
 ```
 
 The analysis writes point estimates and intervals to `analysis/results_summary.json`,
@@ -156,25 +189,28 @@ production metric functions. It also checks manifests, call-ledger coherence,
 unique IDs, matched prompts, parsing, balance, and raw-response preservation.
 It does not independently implement the bootstrap interval calculation.
 
-## Rebuild the research PDF
+## Rebuild the research PDFs
 
-After the final recorded-data analysis and independent audit are present:
+The primary [NeurIPS-style manuscript](paper/research_report.pdf) uses the
+unmodified official 2026 LaTeX style in **preprint** mode; it does not imply
+conference submission or acceptance. The companion
+[hackathon-layout report](paper/research_report_hackathon.pdf) follows the event
+layout with the same content. Neither has repeated "continued" headings.
+The initial report and generator are preserved under `paper/archive/`.
+
+Install Tectonic from its official distribution (or supply a local compiler
+path), plus the Python requirements, then run from the repository root:
 
 ```sh
-python3 tests/independent_audit.py data/pilot.jsonl data/results.jsonl \
-  --summary analysis/results_summary.json --output paper/data_audit.json
-.venv/bin/python paper/build_report.py
+.venv/bin/python paper/build_report.py --compiler tectonic
 ```
 
-The generator requires complete pilot and main manifests, matching raw-data
-SHA-256 hashes, the passing `paper/data_audit.json`, and generated main figures.
-It creates `paper/research_report.pdf`, matching Markdown, and metadata with the
-abstract word count, page count, model-call counts, and PDF hash. Every numerical
-result is read from the saved analysis or reconciled raw data. Arial is used when
-installed, with Helvetica as the portable fallback; Times New Roman Bold (or portable Times-Bold) substitutes for
-the template's Old Standard TT title font. The report follows the official US
-Letter, one-inch-margin, 11-point-body layout. Re-render and visually inspect the
-PDF after changing content or fonts.
+See [style provenance and build details](paper/STYLE_PROVENANCE.md).
+The build verifies the complete recorded-data analysis and audit inputs and
+creates the current manuscript sources, PDFs, and metadata. Numerical claims
+come from saved data and analysis. Inspect rendered pages after changing content,
+fonts, or the compiler. The main manuscript has seven main pages; the companion
+has eight, with references and the ethics appendix excluded from these counts.
 
 ## Rerun live model calls
 
@@ -200,7 +236,12 @@ The configuration plans one pilot replicate and two main replicates. A complete
 replicate contains 16 matched factor blocks and four conditions: 64 episodes,
 with one sender call and eight receiver calls per valid-sender episode. An invalid
 sender leaves the planned receiver outcomes missing and causes no receiver calls.
-Actual counts are always taken from the raw ledger and manifests.
+Actual counts are always taken from the raw ledger and manifests. The unused
+eight-block fraction was removed during revision: balanced single-factor
+marginals concealed joint target leakage through initial, frame, and key.
+Both saved experiments used the full 16-block crossing and are unaffected.
+Regression tests cover this distinction. `--limit-blocks 8` now fails before
+creating artifacts or making calls.
 
 To inspect the planned design without any model call:
 
