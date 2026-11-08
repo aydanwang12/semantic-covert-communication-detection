@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "audited_at_utc": "2026-11-08T23:22:30.602783+00:00",
+  "pdf_sha256": "0cef4060b5971743713db17e86ae51447ddf28dce095ac77495528af9974b104",
+  "pages_rendered": 9,
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "main_pages": 7,
+  "references_start_page": 8,
+  "appendix_start_page": 9,
+  "abstract_words": 185,
+  "rendering": "Poppler pdftoppm at 110 dpi; local Fontconfig cache/config; zero final rendering warnings",
+  "checks": [
+    "No clipped or overlapping text",
+    "All three figures readable at full text width",
+    "Tables fit one-inch margins",
+    "Correct authors and affiliation",
+    "Required ethics appendix and LLM usage statement present",
+    "Seven main pages below eight-page limit",
+    "Numbers generated from audited summary/raw data with matching SHA-256"
+  ],
+  "preview_directory": "tmp/pdfs/",
+  "notes": "Final content corrections and embedded serif/monospace fonts were rebuilt and their changed pages re-inspected; unchanged page layout had already been inspected. Previews are temporary and ignored by Git."
+}
